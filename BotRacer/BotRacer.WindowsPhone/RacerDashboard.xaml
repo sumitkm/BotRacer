@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="BotRacer.Phone.RacerDashboard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BotRacer.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Slider x:Name="Accelerator" Margin="500,72,72,72" Orientation="Vertical" LargeChange="-1" ValueChanged="AcceleratorSliderValueChanged" Maximum="255" StepFrequency="1" Minimum="0" Value="0"/>
+        <Slider x:Name="Steering" Margin="61,285,215,72" LargeChange="1" ValueChanged="SteeringSliderValueChanged" Maximum="255" StepFrequency="1" Minimum="0" Value="128" Style="{StaticResource horizontalSliderStyle}"/>
+
+    </Grid>
+</Page>

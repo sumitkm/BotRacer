@@ -19,8 +19,9 @@ using BackgroundExecutiondManager = Windows.ApplicationModel.Background.Backgrou
 using BackgroundTaskRegistration = Windows.ApplicationModel.Background.BackgroundTaskRegistration;
 using DeviceInformation = Windows.Devices.Enumeration.DeviceInformation;
 using BluetoothLEDevice = Windows.Devices.Bluetooth.BluetoothLEDevice;
-using Racer = BotRacer.Phone.Common.Racer;
+using BotRacer.Phone.Common;
 using System.Threading.Tasks;
+using BotRacer.Phone;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -93,7 +94,10 @@ namespace BotRacer
 
         private void deviceListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            if (deviceListBox.SelectedItem != null)
+            {
+                Frame.Navigate(typeof(RacerDashboard), deviceListBox.SelectedItem);
+            }
         }
     }
 }
