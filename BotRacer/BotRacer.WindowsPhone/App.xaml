@@ -8,10 +8,10 @@
         <Thickness x:Key="SliderBorderThemeThickness">0</Thickness>
         <FontFamily x:Key="ContentControlThemeFontFamily">Segoe WP</FontFamily>
         <x:Double x:Key="ControlContentThemeFontSize">12</x:Double>
-        <x:Double x:Key="SliderOutsideTickBarThemeHeight">5</x:Double>
-        <x:Double x:Key="SliderTrackThemeHeight">9</x:Double>
+        <x:Double x:Key="SliderOutsideTickBarThemeHeight">15</x:Double>
+        <x:Double x:Key="SliderTrackThemeHeight">20</x:Double>
         <SolidColorBrush x:Key="SliderDisabledBorderThemeBrush" Color="Transparent"/>
-        <Style x:Key="horizontalSliderStyle" TargetType="Slider">
+        <Style x:Key="RacerSlider" TargetType="Slider">
             <Setter Property="Background" Value="{ThemeResource SliderTrackBackgroundThemeBrush}"/>
             <Setter Property="BorderBrush" Value="{ThemeResource SliderBorderThemeBrush}"/>
             <Setter Property="BorderThickness" Value="{ThemeResource SliderBorderThemeThickness}"/>
@@ -114,7 +114,7 @@
                                         <ColumnDefinition Width="*"/>
                                     </Grid.ColumnDefinitions>
                                     <Grid.RowDefinitions>
-                                        <RowDefinition Height="17.5"/>
+                                        <RowDefinition Height="10.5"/>
                                         <RowDefinition Height="Auto"/>
                                         <RowDefinition Height="30.5"/>
                                     </Grid.RowDefinitions>
@@ -123,14 +123,14 @@
                                     <TickBar x:Name="TopTickBar" Grid.ColumnSpan="3" Fill="{ThemeResource SliderTickmarkOutsideBackgroundThemeBrush}" Height="{ThemeResource SliderOutsideTickBarThemeHeight}" Margin="-4.5,0" Visibility="Collapsed"/>
                                     <TickBar x:Name="HorizontalInlineTickBar" Grid.ColumnSpan="3" Fill="{ThemeResource SliderTickMarkInlineBackgroundThemeBrush}" Height="{ThemeResource SliderTrackThemeHeight}" Margin="-4.5,0" Grid.Row="1" Visibility="Collapsed"/>
                                     <TickBar x:Name="BottomTickBar" Grid.ColumnSpan="3" Fill="{ThemeResource SliderTickmarkOutsideBackgroundThemeBrush}" Height="{ThemeResource SliderOutsideTickBarThemeHeight}" Margin="-4.5,0" Grid.Row="2" Visibility="Collapsed"/>
-                                    <Thumb x:Name="HorizontalThumb" AutomationProperties.AccessibilityView="Raw" Background="{ThemeResource SliderThumbBackgroundThemeBrush}" Grid.Column="1" DataContext="{TemplateBinding Value}" Height="19" Margin="0,13,0,0" Grid.RowSpan="3" Style="{StaticResource SliderThumbStyle}" VerticalAlignment="Top" Width="9.5"/>
+                                    <Thumb x:Name="HorizontalThumb" AutomationProperties.AccessibilityView="Raw" Background="{ThemeResource SliderThumbBackgroundThemeBrush}" Grid.Column="1" DataContext="{TemplateBinding Value}" Height="28" Margin="0,7,0,0" Grid.RowSpan="3" Style="{StaticResource SliderThumbStyle}" VerticalAlignment="Top" Width="9.5"/>
                                     <Rectangle x:Name="HorizontalBorder" Grid.ColumnSpan="3" Grid.RowSpan="3" Stroke="{TemplateBinding BorderBrush}" StrokeThickness="{TemplateBinding BorderThickness}"/>
                                 </Grid>
                                 <Grid x:Name="VerticalTemplate" Visibility="Collapsed">
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="13.5"/>
+                                        <ColumnDefinition Width="7.5"/>
                                         <ColumnDefinition Width="Auto"/>
-                                        <ColumnDefinition Width="13.5"/>
+                                        <ColumnDefinition Width="7.5"/>
                                     </Grid.ColumnDefinitions>
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="*"/>

@@ -9,8 +9,8 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Slider x:Name="Accelerator" Margin="500,72,72,72" Orientation="Vertical" LargeChange="-1" ValueChanged="AcceleratorSliderValueChanged" Maximum="255" StepFrequency="1" Minimum="0" Value="0"/>
-        <Slider x:Name="Steering" Margin="61,285,215,72" LargeChange="1" ValueChanged="SteeringSliderValueChanged" Maximum="255" StepFrequency="1" Minimum="0" Value="128" Style="{StaticResource horizontalSliderStyle}"/>
+        <Slider x:Name="Accelerator" Margin="500,72,72,72" Orientation="Vertical" LargeChange="1" ValueChanged="AcceleratorSliderValueChanged" Maximum="255" StepFrequency="1" Minimum="0" Value="0" Style="{StaticResource RacerSlider}"/>
+        <Slider x:Name="Steering" Margin="61,285,215,72" LargeChange="1" ValueChanged="SteeringSliderValueChanged" Maximum="255" StepFrequency="1" Minimum="0" Value="128" Style="{StaticResource RacerSlider}" />
 
     </Grid>
 </Page>

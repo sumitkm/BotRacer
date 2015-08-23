@@ -84,8 +84,8 @@ namespace BotRacer.Phone.Common
         // Constructor
         public Racer(BluetoothLEDevice device)
         {
-            XValue = 0;
-            YValue = 0;
+            XValue = 128;
+            YValue = 128;
             ZValue = 255;
             BValue = 0;
 
